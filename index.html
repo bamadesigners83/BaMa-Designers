@@ -820,16 +820,7 @@
          
         </select>
       </div>
-      <div class="form-row">
-        <div class="form-group">
-          <label>Quantity</label>
-          <input type="number" placeholder="1" min="1">
-        </div>
-        <div class="form-group">
-          <label>Deadline</label>
-          <input type="date">
-        </div>
-      </div>
+    
       <div class="form-group">
         <label>Describe Your Design / Requirements</label>
         <textarea placeholder="Tell us about the outfit style, fabric preference, occasion, etc."></textarea>
@@ -861,7 +852,7 @@ function sendToWhatsApp() {
   if (name) msg += `*Name:* ${name}%0A`;
   if (phone) msg += `*Phone:* ${phone}%0A`;
   if (service) msg += `*Service:* ${service}%0A`;
-  if (qty) msg += `*Quantity:* ${qty}%0A`;
+  
   if (desc) msg += `*Details:* ${desc}%0A`;
   msg += `%0APlease let me know the details. Thank you!`;
 
